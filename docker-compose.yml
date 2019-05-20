@@ -1,0 +1,8 @@
+version: "2.0"
+services:
+  qemu:
+    image: lunderhage/dropbox-qemu-arm:1.0
+    build: .
+    restart: always
+    volumes:
+      - "./Dropbox:/home/dropbox/Dropbox"
